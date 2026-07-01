@@ -1,6 +1,6 @@
-# Business Insights: Financial Performance Analysis
+# Python Business Insights
 
-**Prepared by:** Anishka Patel
+This section presents advanced business insights generated using Python following ETL, exploratory data analysis (EDA), feature engineering, and analytical visualization. These analyses complement the interactive Power BI dashboard by providing deeper financial and operational perspectives on hospital performance.
 
 ---
 
@@ -12,27 +12,24 @@
 
 ## Key Insights
 
-The hospital’s financial structure is heavily dominated by insurance coverage, which contributes the largest share of total monetary flow. This indicates that the organization is highly dependent on third-party reimbursement systems rather than direct patient payments. While this strengthens patient affordability and treatment accessibility, it also exposes the hospital to reimbursement delays and payer dependency risks.
+The hospital's financial structure is heavily dominated by insurance coverage, which contributes the largest share of total monetary flow. This indicates that the organization is highly dependent on third-party reimbursement systems rather than direct patient payments. While this strengthens patient affordability and treatment accessibility, it also exposes the hospital to reimbursement delays and payer dependency risks.
 
-Surgery costs form the second-largest component, highlighting that surgical and procedural services are major revenue-generating activities. This suggests the hospital operates with a strong focus on treatment-intensive and specialty-care services that require advanced infrastructure, skilled personnel, and expensive equipment.
+Surgery costs form the second-largest component, highlighting that surgical and procedural services are major revenue-generating activities. This suggests the hospital operates with a strong focus on treatment-intensive and specialty-care services requiring advanced infrastructure and specialized clinical expertise.
 
-Room costs also contribute significantly, which indicates high inpatient occupancy and strong utilization of hospital infrastructure. Longer admissions and intensive care utilization are likely major contributors to this revenue stream.
+Room costs also contribute significantly, indicating strong inpatient utilization and effective use of hospital infrastructure. Longer admissions and intensive care services are likely major contributors to this revenue stream.
 
-At the lower end, costs related to rehabilitation, nutrition, diagnostics, and psychological support remain relatively smaller. This suggests that while supportive care services exist, the hospital’s primary financial performance is driven by core treatment and procedural services.
+Supportive services such as rehabilitation, nutrition, diagnostics, and psychological care account for comparatively smaller proportions of overall costs, suggesting that core clinical procedures remain the hospital's primary financial drivers.
 
 ## Recommendations
 
-Reduce dependency on delayed insurance reimbursements by improving claim-cycle efficiency and reimbursement tracking systems.
-
-Invest further in high-performing surgical specialties since they are major revenue contributors.
-
-Improve bed management and room turnover efficiency to maximize infrastructure utilization without increasing congestion.
-
-Expand rehabilitation and post-treatment support programs as future value-added services that can improve both patient outcomes and revenue diversification.
+- Improve insurance claim-cycle efficiency to reduce reimbursement delays.
+- Continue investing in high-performing surgical specialties.
+- Optimize bed management and room turnover.
+- Expand rehabilitation and post-treatment services to diversify revenue.
 
 ---
 
-# 2. Revenue by Patient Segment
+# 2. Revenue Contribution by Patient Segment
 
 <p align="center">
   <img src="visuals/Revenue Contribution by Patient Segment.png" width="900">
@@ -40,21 +37,18 @@ Expand rehabilitation and post-treatment support programs as future value-added 
 
 ## Key Insights
 
-The segmentation analysis clearly shows that premium-value patients generate disproportionately higher revenue compared to all other patient groups. Although encounter counts remain relatively similar across segments, the average revenue difference between low-value and premium-value patients is extremely large.
+The segmentation analysis shows that premium-value patients contribute a disproportionately large share of hospital revenue. Although encounter volumes remain relatively balanced across segments, average revenue increases substantially from low-value to premium-value patients.
 
-This indicates that a relatively small set of highly complex or specialized treatments contributes a substantial share of total hospital earnings. Premium-value encounters are likely associated with advanced procedures, critical care services, extended admissions, or high-end treatment pathways.
+Higher-value patient groups are likely associated with advanced procedures, critical care, complex treatments, and extended hospital stays, all of which require greater clinical resources and infrastructure.
 
-The increasing average length of stay across revenue segments further supports the idea that more expensive cases are operationally more resource-intensive. High-value patients require greater infrastructure utilization, specialized monitoring, advanced procedures, and multidisciplinary care.
+The increasing average length of stay across revenue segments further suggests that higher financial returns are closely linked to greater operational complexity.
 
 ## Recommendations
 
-Continue strengthening premium specialty-care departments and advanced treatment capabilities.
-
-Develop patient-retention and referral programs for high-value specialties.
-
-Improve operational efficiency in medium- and low-value segments to maintain profitability while controlling resource consumption.
-
-Use segmentation insights to prioritize resource allocation and strategic investment planning.
+- Expand premium specialty-care services.
+- Strengthen referral programs for high-value treatment pathways.
+- Improve operational efficiency for low- and medium-value encounters.
+- Allocate resources according to patient segment profitability.
 
 ---
 
@@ -66,21 +60,16 @@ Use segmentation insights to prioritize resource allocation and strategic invest
 
 ## Key Insights
 
-The hospital maintains relatively stable revenue generation throughout the year, which suggests a healthy baseline level of operational consistency. However, fluctuations between months indicate varying patient demand, treatment scheduling patterns, or seasonal healthcare trends.
+Revenue remains relatively stable throughout the year, indicating consistent operational performance. However, monthly fluctuations suggest seasonal variation in patient demand, treatment scheduling, or disease prevalence.
 
-March appears to be the strongest-performing month, suggesting either higher patient inflow, increased surgical activity, or concentration of premium-value treatments during that period. On the other hand, months with noticeable dips may reflect reduced admissions, operational slowdowns, or seasonal fluctuations in disease prevalence.
-
-Despite these variations, the hospital demonstrates resilience through recovery periods after declines, indicating operational stability and sustained patient demand.
+March represents one of the strongest-performing periods, while lower-performing months may reflect reduced admissions or seasonal slowdowns. Despite these fluctuations, the hospital consistently recovers, demonstrating operational resilience.
 
 ## Recommendations
 
-Investigate causes behind high-performing months and replicate successful operational practices.
-
-Improve forecasting models to better prepare staffing and infrastructure requirements during peak periods.
-
-Launch targeted patient outreach and preventive-care campaigns during historically weaker months.
-
-Build flexible staffing strategies that can adapt to seasonal fluctuations in patient volume.
+- Analyze high-performing months to identify repeatable success factors.
+- Improve demand forecasting and capacity planning.
+- Increase outreach initiatives during historically weaker periods.
+- Develop flexible staffing strategies for seasonal demand.
 
 ---
 
@@ -90,7 +79,18 @@ Build flexible staffing strategies that can adapt to seasonal fluctuations in pa
   <img src="visuals/Pareto Analysis.png" width="900">
 </p>
 
-(Continue exactly the same pattern...)
+## Key Insights
+
+The Pareto analysis demonstrates that a relatively small proportion of patient encounters generates the majority of hospital revenue. This reflects the significant contribution of specialized procedures, complex treatments, and intensive-care services.
+
+The steep cumulative revenue curve highlights the organization's reliance on premium-value clinical services for financial performance.
+
+## Recommendations
+
+- Continue investing in high-value specialties.
+- Protect key revenue-generating service lines.
+- Diversify revenue sources to reduce concentration risk.
+- Monitor dependence on premium treatment categories.
 
 ---
 
@@ -100,17 +100,41 @@ Build flexible staffing strategies that can adapt to seasonal fluctuations in pa
   <img src="visuals/Disease Strategic Portfolio Matrix.png" width="900">
 </p>
 
-(Original text)
+## Key Insights
+
+The portfolio matrix distinguishes between disease categories that drive patient volume and those that generate higher revenue. High-volume diseases contribute significantly to operational workload, whereas lower-volume specialty conditions contribute disproportionately to profitability.
+
+This visualization supports strategic decisions regarding service expansion, clinical prioritization, and resource allocation.
+
+## Recommendations
+
+- Invest in high-margin specialty-care services.
+- Improve efficiency for high-volume disease categories.
+- Prioritize staffing and infrastructure based on profitability.
+- Develop disease-specific operational strategies.
 
 ---
 
-# 6. Revenue by Stay Duration
+# 6. Average Revenue by Stay Duration
 
 <p align="center">
   <img src="visuals/Average Revenue by Stay Duration.png" width="900">
 </p>
 
-(Original text)
+## Key Insights
+
+Revenue generally increases with longer hospital stays, reflecting greater resource utilization associated with complex treatments, intensive monitoring, and multidisciplinary care.
+
+Short- and medium-duration admissions continue to contribute substantially to overall revenue, indicating efficient patient throughput for many treatment pathways.
+
+Extended stays, while financially valuable, also consume significant hospital resources and capacity.
+
+## Recommendations
+
+- Improve discharge planning.
+- Identify patients at risk of prolonged hospitalization.
+- Strengthen transitional care programs.
+- Optimize ICU and specialty-bed utilization.
 
 ---
 
@@ -120,7 +144,18 @@ Build flexible staffing strategies that can adapt to seasonal fluctuations in pa
   <img src="visuals/Revenue Concentration Heat Map.png" width="900">
 </p>
 
-(Original text)
+## Key Insights
+
+The heatmap demonstrates that premium-value patient segments consistently generate higher revenue across multiple disease categories. Certain diagnoses exhibit significantly stronger revenue concentration than others, highlighting areas of strategic financial importance.
+
+The visualization helps identify combinations of disease type and patient segment that contribute the greatest financial value.
+
+## Recommendations
+
+- Expand services in high-performing disease categories.
+- Strengthen advanced treatment pathways.
+- Monitor dependence on limited revenue sources.
+- Prioritize investments in specialist expertise and clinical infrastructure.
 
 ---
 
@@ -130,7 +165,18 @@ Build flexible staffing strategies that can adapt to seasonal fluctuations in pa
   <img src="visuals/Month-on-Month Revenue Growth.png" width="900">
 </p>
 
-(Original text)
+## Key Insights
+
+Revenue growth varies throughout the year, reflecting fluctuations in patient demand, treatment volumes, and operational activity. Periods of strong growth are followed by temporary declines, although overall performance remains resilient.
+
+Understanding these patterns supports improved financial planning, staffing decisions, and operational forecasting.
+
+## Recommendations
+
+- Enhance revenue forecasting models.
+- Investigate periods of negative growth.
+- Improve seasonal workforce planning.
+- Diversify clinical services to reduce revenue volatility.
 
 ---
 
@@ -140,4 +186,17 @@ Build flexible staffing strategies that can adapt to seasonal fluctuations in pa
   <img src="visuals/Hospital Metrics Correlation Heatmap.png" width="900">
 </p>
 
-(Original text)
+## Key Insights
+
+The correlation heatmap identifies strong relationships between operational and financial variables. Cost components such as surgery, room utilization, diagnostics, and insurance coverage exhibit meaningful associations, indicating shared drivers of hospital expenditure.
+
+Length of stay also demonstrates a positive relationship with treatment costs, reinforcing its role as a major determinant of resource utilization and financial intensity.
+
+These relationships provide valuable inputs for predictive analytics and strategic planning.
+
+## Recommendations
+
+- Develop predictive models using correlated variables.
+- Monitor key cost drivers proactively.
+- Support budgeting and resource planning through correlation analysis.
+- Leverage identified relationships for operational optimization.
